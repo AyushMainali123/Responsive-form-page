@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Responsive Form Page</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="max-width= device-width, initial-scale= 1.0">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Help</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>Please fill the form</p>
+      <form>
+        <div id="basic">
+          <input type="text" name="fname" id="fname" placeholder="First Name" autofocus>
+          <input type="text" name="lname" id="lname" placeholder="Last Name">
+          <input type="email" name="useremail" id="useremail" placeholder="Email address">
+        </div>
+        <div id="info">
+          <fieldset id="gender">
+            <legend>Please enter your gender</legend>
+            <div class= male>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" checked>
+            </div>
+            <div class="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            </div>
+            <div class="others">
+            <label for="others">Others</label>
+            <input type="radio" name="gender" id="others">
+            </div>
+          </fieldset>
+          <fieldset id="interest">
+            <legend>Area of Interest</legend>
+            <div class="frontend">
+              <label for="frontend">Front End Develeopment</label>
+              <input type="checkbox" name="frontend" id="frontend">
+            </div>
+            <div class="backend">
+              <label for="backend">Back End Development</label>
+              <input type="checkbox" name="backend" id="backend">
+            </div>
+            <div class="fullstack">
+              <label for="fullstack">Full Stack</label>
+              <input type="checkbox" name="fullstack" id="fullstack">
+            </div>
+          </fieldset>
+          
+        </div>
+        <div id="text">
+          <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Text area"></textarea>
+        </div>
+        <input type="submit" name="submit" id="submit">
+        
+      </form>
+    </main>
+    <footer>
+      <address>
+        Form by <a href="#" id="mail">Ayush Mainali</a>
+      </address>
+    </footer>
+  </body>
+</html>

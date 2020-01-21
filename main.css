@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+html, body
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: url("https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg"), green;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-rows: minmax(10vh, auto);
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-gap: 30px;
+}
+
+header
+{
+    border: 3px solid  black;
+    grid-area: header;
+    background-color: rgba(38, 0, 252, 0.479);
+}
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    height: 10vh;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul li
+{
+    cursor: pointer;   
+}
+header nav ul li:hover
+{
+    transition: ease-out;
+    transition-delay: 0.6s;
+    color: orange;
+}
+main
+{
+    width: 70vw;
+    border: 5px solid peru;
+    margin: 0px auto;
+    background-color: rgba(95, 158, 160, 0.466);
+    padding-bottom: 20px;
+}
+main p
+{
+  margin: 20px;
+  font-size: 30px;
+  color: aqua;
+}
+main form
+{
+    grid-area: main;
+    max-width: 760px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+#basic
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    //background-color: red;
+}
+#basic input
+{
+    padding: 7px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    
+}
+#info #gender
+{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    //background-color: fuchsia;
+}
+#info #gender input
+{
+    margin: 5px;
+}
+#info #interest
+{
+    display: flex;
+    //background-color: black;
+    padding: 5px;
+}
+#info #interest input
+{
+    margin: 5px;
+}
+form #text
+{
+    padding: 15px;
+    margin: 0px auto;
+}
+form #text textarea
+{
+    color: red;
+}
+form #submit
+{
+    flex-basis: 3em;
+    margin: 0px auto;
+    width: 100px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: chartreuse;
+}
+footer
+{
+    //border: 4px solid fuchsia;
+    grid-area: footer;
+}
+@media screen and (max-width: 370px)
+{
+    main form
+    {
+        width: 100%;
+    }
+    main p
+    {
+        font-size: 25px;
+    }
+    form #text textarea
+    {
+        max-width: 70px;
+    }
+}
