@@ -67,7 +67,7 @@ main p
 main form
 {
     grid-area: main;
-    max-width: 760px;
+    max-width: 560px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -77,21 +77,18 @@ main form
     display: flex;
     flex-direction: column;
     padding: 5px;
-    //background-color: red;
 }
 #basic input
 {
     padding: 7px;
     margin-bottom: 1em;
     border-radius: 5px;
-    
 }
 #info #gender
 {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    //background-color: fuchsia;
 }
 #info #gender input
 {
@@ -100,7 +97,6 @@ main form
 #info #interest
 {
     display: flex;
-    //background-color: black;
     padding: 5px;
 }
 #info #interest input
@@ -125,9 +121,13 @@ form #submit
     text-transform: capitalize;
     color: chartreuse;
 }
+form #submit:hover
+{
+	background-color: orange;
+	color: white;
+}
 footer
 {
-    //border: 4px solid fuchsia;
     grid-area: footer;
 }
 @media screen and (max-width: 370px)
